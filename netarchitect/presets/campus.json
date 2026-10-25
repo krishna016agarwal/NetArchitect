@@ -1,0 +1,111 @@
+{
+  "profile": "campus",
+  "root_prefix": "10.10.0.0/16",
+  "resiliency": true,
+  "sites": [
+    {
+      "name": "A-Admin",
+      "devices": [
+        {
+          "name": "CORE-A",
+          "type": "l3_switch",
+          "supports_isl": false
+        }
+      ],
+      "area": 0
+    },
+    {
+      "name": "B-Academic",
+      "devices": [
+        {
+          "name": "DIST-B",
+          "type": "l3_switch",
+          "supports_isl": false
+        }
+      ],
+      "area": 0
+    },
+    {
+      "name": "C-Hostel",
+      "devices": [
+        {
+          "name": "DIST-C",
+          "type": "l3_switch",
+          "supports_isl": false
+        }
+      ],
+      "area": 0
+    }
+  ],
+  "links": [
+    {
+      "a": "A-Admin",
+      "b": "B-Academic",
+      "distance_m": 180
+    },
+    {
+      "a": "A-Admin",
+      "b": "C-Hostel",
+      "distance_m": 360
+    },
+    {
+      "b": "C-Hostel",
+      "a": "B-Academic",
+      "distance_m": 250
+    }
+  ],
+  "vlans": [
+    {
+      "id": 10,
+      "name": "Admin",
+      "hosts": 200,
+      "site": "A-Admin"
+    },
+    {
+      "id": 20,
+      "name": "Servers",
+      "hosts": 60,
+      "site": "A-Admin"
+    },
+    {
+      "id": 30,
+      "name": "Mgmt",
+      "hosts": 40,
+      "site": "A-Admin"
+    },
+    {
+      "id": 40,
+      "name": "CCTV",
+      "hosts": 30,
+      "site": "A-Admin"
+    },
+    {
+      "id": 50,
+      "name": "Faculty",
+      "hosts": 250,
+      "site": "B-Academic"
+    },
+    {
+      "id": 60,
+      "name": "Labs",
+      "hosts": 300,
+      "site": "B-Academic"
+    },
+    {
+      "id": 70,
+      "name": "APs",
+      "hosts": 120,
+      "site": "B-Academic",
+      "poe": true
+    },
+    {
+      "id": 80,
+      "name": "Students",
+      "hosts": 600,
+      "site": "C-Hostel"
+    }
+  ],
+  "extras": {
+    "access_run_max_m": 90
+  }
+}

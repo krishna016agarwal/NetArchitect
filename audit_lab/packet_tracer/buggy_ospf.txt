@@ -1,0 +1,19 @@
+! Cisco IOS OSPF Configuration (BUGGY AI DRAFT 05)
+! Interfaces: 10.10.1.0/26 and 10.10.1.64/27 in Area 0
+
+hostname OSPF-ROUTER
+!
+interface GigabitEthernet0/0
+ ip address 10.10.1.1 255.255.255.192
+ no shutdown
+!
+interface GigabitEthernet0/1
+ ip address 10.10.1.65 255.255.255.224
+ no shutdown
+!
+router ospf 1
+ router-id 1.1.1.1
+ network 10.10.1.0 0.0.0.63 area 0
+ network 10.10.1.64 0.0.0.63 area 0
+!
+end

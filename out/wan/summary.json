@@ -1,0 +1,32 @@
+{
+  "profile": "wan",
+  "root_prefix": "10.100.0.0/16",
+  "total_decisions": 41,
+  "total_subnets": 19,
+  "total_hosts_requested": 2210,
+  "total_usable_addresses": 2802,
+  "efficiency_percent": 78.9,
+  "links": [
+    {
+      "name": "Delhi-Mumbai",
+      "distance_m": 1150000.0,
+      "media": "Carrier WAN Circuit",
+      "standard": "Carrier Ethernet / IPsec",
+      "margin_db": null
+    },
+    {
+      "name": "Delhi-Bengaluru",
+      "distance_m": 1750000.0,
+      "media": "Carrier WAN Circuit",
+      "standard": "Carrier Ethernet / IPsec",
+      "margin_db": null
+    },
+    {
+      "name": "Delhi-Chennai",
+      "distance_m": 1760000.0,
+      "media": "Carrier WAN Circuit",
+      "standard": "Carrier Ethernet / IPsec",
+      "margin_db": null
+    }
+  ]
+}

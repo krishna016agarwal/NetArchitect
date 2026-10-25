@@ -1,0 +1,142 @@
+{
+  "profile": "wan",
+  "root_prefix": "10.100.0.0/16",
+  "resiliency": false,
+  "sites": [
+    {
+      "name": "Delhi",
+      "devices": [
+        {
+          "name": "RTR-DELHI",
+          "type": "router"
+        }
+      ],
+      "area": 0
+    },
+    {
+      "name": "Mumbai",
+      "devices": [
+        {
+          "name": "RTR-MUMBAI",
+          "type": "router"
+        }
+      ],
+      "area": 1
+    },
+    {
+      "name": "Bengaluru",
+      "devices": [
+        {
+          "name": "RTR-BENGALURU",
+          "type": "router"
+        }
+      ],
+      "area": 2
+    },
+    {
+      "name": "Chennai",
+      "devices": [
+        {
+          "name": "RTR-CHENNAI",
+          "type": "router"
+        }
+      ],
+      "area": 3
+    }
+  ],
+  "links": [
+    {
+      "a": "Delhi",
+      "b": "Mumbai",
+      "distance_m": 1150000
+    },
+    {
+      "a": "Delhi",
+      "b": "Bengaluru",
+      "distance_m": 1750000
+    },
+    {
+      "a": "Delhi",
+      "b": "Chennai",
+      "distance_m": 1760000
+    }
+  ],
+  "vlans": [
+    {
+      "id": 101,
+      "name": "Delhi-IoT",
+      "hosts": 800,
+      "site": "Delhi"
+    },
+    {
+      "id": 102,
+      "name": "Delhi-Servers",
+      "hosts": 20,
+      "site": "Delhi"
+    },
+    {
+      "id": 103,
+      "name": "Delhi-Mgmt",
+      "hosts": 30,
+      "site": "Delhi"
+    },
+    {
+      "id": 201,
+      "name": "Mumbai-IoT",
+      "hosts": 500,
+      "site": "Mumbai"
+    },
+    {
+      "id": 202,
+      "name": "Mumbai-Servers",
+      "hosts": 20,
+      "site": "Mumbai"
+    },
+    {
+      "id": 203,
+      "name": "Mumbai-Mgmt",
+      "hosts": 30,
+      "site": "Mumbai"
+    },
+    {
+      "id": 301,
+      "name": "Bengaluru-IoT",
+      "hosts": 400,
+      "site": "Bengaluru"
+    },
+    {
+      "id": 302,
+      "name": "Bengaluru-Servers",
+      "hosts": 20,
+      "site": "Bengaluru"
+    },
+    {
+      "id": 303,
+      "name": "Bengaluru-Mgmt",
+      "hosts": 30,
+      "site": "Bengaluru"
+    },
+    {
+      "id": 401,
+      "name": "Chennai-IoT",
+      "hosts": 300,
+      "site": "Chennai"
+    },
+    {
+      "id": 402,
+      "name": "Chennai-Servers",
+      "hosts": 20,
+      "site": "Chennai"
+    },
+    {
+      "id": 403,
+      "name": "Chennai-Mgmt",
+      "hosts": 30,
+      "site": "Chennai"
+    }
+  ],
+  "extras": {
+    "cloud_prefix": "10.200.0.0/16",
+    "allow_slash31": true
+  }
+}

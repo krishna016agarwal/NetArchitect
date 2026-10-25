@@ -1,0 +1,180 @@
+! ===== DEVICE: {{ hostname }} =====
+!
+hostname {{ hostname }}
+no ip domain-lookup
+!
+{% if vlans %}
+! --- VLAN Configuration (IEEE 802.1Q) ---
+{% for v in vlans %}
+vlan {{ v.id }}
+ name {{ v.name }}
+{% endfor %}
+vlan {{ native_vlan }}
+ name NATIVE
+!
+{% endif %}
+{% if vlans %}
+! --- Spanning Tree (IEEE 802.1w RSTP) ---
+spanning-tree mode {{ stp_mode }}
+{% if stp_is_root %}
+{% for v in vlans %}
+spanning-tree vlan {{ v.id }} priority {{ stp_root_priority }}
+{% endfor %}
+{% endif %}
+!
+{% endif %}
+{% if ip_routing %}
+! --- Layer 3 Routing ---
+ip routing
+!
+{% endif %}
+{% if svis %}
+! --- SVI Interfaces ---
+{% for svi in svis %}
+interface Vlan{{ svi.vlan_id }}
+ description {{ svi.name }} SVI
+ ip address {{ svi.ip }} {{ svi.mask }}
+ no shutdown
+!
+{% endfor %}
+{% endif %}
+{% if trunk_ports %}
+! --- Trunk Ports ---
+{% for port in trunk_ports %}
+interface {{ port.interface }}
+ description {{ port.description }}
+{% if port.needs_encap %}
+ switchport trunk encapsulation dot1q
+{% endif %}
+ switchport mode trunk
+ switchport trunk allowed vlan {{ port.allowed_vlans }}
+ switchport trunk native vlan {{ port.native_vlan }}
+ no shutdown
+!
+{% endfor %}
+{% endif %}
+{% if access_ports %}
+! --- Access Ports ---
+{% for port in access_ports %}
+interface {{ port.interface }}
+ description {{ port.description }}
+ switchport mode access
+ switchport access vlan {{ port.vlan }}
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+ no shutdown
+!
+{% endfor %}
+{% endif %}
+{% if routed_ports %}
+! --- Routed Point-to-Point Ports ---
+{% for port in routed_ports %}
+interface {{ port.interface }}
+ description {{ port.description }}
+ no switchport
+ ip address {{ port.ip }} {{ port.mask }}
+ no shutdown
+!
+{% endfor %}
+{% endif %}
+{% if loopbacks %}
+! --- Loopback Interfaces ---
+{% for lo in loopbacks %}
+interface {{ lo.interface }}
+ description {{ lo.description }}
+ ip address {{ lo.ip }} {{ lo.mask }}
+ no shutdown
+!
+{% endfor %}
+{% endif %}
+{% if subinterfaces %}
+! --- Dot1Q Subinterfaces (Metro EVPL handoff) ---
+{% for sub in subinterfaces %}
+interface {{ sub.interface }}
+ description {{ sub.description }}
+ encapsulation {{ sub.encapsulation }}
+ ip address {{ sub.ip }} {{ sub.mask }}
+ no shutdown
+!
+{% endfor %}
+{% endif %}
+{% if ospf %}
+! --- OSPF Configuration (RFC 2328) ---
+router ospf {{ ospf.process_id }}
+ router-id {{ ospf.router_id }}
+{% for net in ospf.networks %}
+ network {{ net.network }} {{ net.wildcard }} area {{ net.area }}
+{% endfor %}
+{% for pi in ospf.passive_interfaces %}
+ passive-interface {{ pi }}
+{% endfor %}
+{% for ar in ospf.area_ranges %}
+ area {{ ar.area }} range {{ ar.network }} {{ ar.mask }}
+{% endfor %}
+!
+{% endif %}
+{% if acls %}
+! --- Access Control Lists ---
+{% for acl in acls %}
+ip access-list extended {{ acl.name }}
+{% for entry in acl.entries %}
+ {{ entry }}
+{% endfor %}
+!
+{% endfor %}
+{% for app in acl_applications %}
+interface {{ app.interface }}
+ ip access-group {{ app.acl_name }} {{ app.direction }}
+!
+{% endfor %}
+{% endif %}
+{% if bgp %}
+! --- BGP Configuration (RFC 4271, RFC 6996) ---
+router bgp {{ bgp.local_as }}
+{% for neighbor in bgp.neighbors %}
+ neighbor {{ neighbor.ip }} remote-as {{ neighbor.remote_as }}
+{% endfor %}
+{% for net in bgp.networks %}
+ network {{ net.network }} mask {{ net.mask }}
+{% endfor %}
+!
+{% endif %}
+{% if ipsec %}
+! --- IPsec VPN Configuration (RFC 4301) ---
+crypto isakmp policy 10
+ encr aes 256
+ authentication pre-share
+ group 14
+!
+crypto isakmp key {{ ipsec.preshared_key }} address {{ ipsec.peer_ip }}
+!
+crypto ipsec transform-set {{ "IPSEC-TS" }} esp-aes 256 esp-sha256-hmac
+ mode tunnel
+!
+ip access-list extended {{ ipsec.acl_name }}
+ remark Interesting traffic for IPsec tunnel
+ permit ip {{ ipsec.local_network }} {{ ipsec.local_wildcard }} {{ ipsec.remote_network }} {{ ipsec.remote_wildcard }}
+!
+crypto map {{ ipsec.map_name }} 10 ipsec-isakmp
+ set peer {{ ipsec.peer_ip }}
+ set transform-set {{ "IPSEC-TS" }}
+ match address {{ ipsec.acl_name }}
+!
+interface {{ ipsec.interface }}
+ crypto map {{ ipsec.map_name }}
+!
+{% endif %}
+{% if qos %}
+! --- QoS Configuration (Metro) ---
+class-map match-all VOICE-CLASS
+ match dscp ef
+!
+policy-map QOS-POLICY
+ class VOICE-CLASS
+  priority percent {{ qos.priority_percent }}
+!
+interface {{ qos.interface }}
+ service-policy output QOS-POLICY
+!
+{% endif %}
+end

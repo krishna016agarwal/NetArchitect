@@ -1,0 +1,907 @@
+﻿========================================================================
+  AUDIT HARNESS ΓÇö Independent checks on AI first-draft solutions
+========================================================================
+
+[PASS] Task 01: wildcard for 10.0.0.0/0
+[PASS] Task 01: broadcast for 10.0.0.0/0
+[PASS] Task 01: network for 10.0.0.0/0
+[PASS] Task 01: mask for 10.0.0.0/0
+[PASS] Task 01: wildcard for 192.168.1.0/0
+[PASS] Task 01: broadcast for 192.168.1.0/0
+[PASS] Task 01: network for 192.168.1.0/0
+[PASS] Task 01: mask for 192.168.1.0/0
+[PASS] Task 01: wildcard for 172.16.0.0/0
+[PASS] Task 01: broadcast for 172.16.0.0/0
+[PASS] Task 01: network for 172.16.0.0/0
+[PASS] Task 01: mask for 172.16.0.0/0
+[PASS] Task 01: wildcard for 255.255.255.255/0
+[PASS] Task 01: broadcast for 255.255.255.255/0
+[PASS] Task 01: network for 255.255.255.255/0
+[PASS] Task 01: mask for 255.255.255.255/0
+[PASS] Task 01: wildcard for 0.0.0.0/0
+[PASS] Task 01: broadcast for 0.0.0.0/0
+[PASS] Task 01: network for 0.0.0.0/0
+[PASS] Task 01: mask for 0.0.0.0/0
+[PASS] Task 01: wildcard for 10.10.1.64/0
+[PASS] Task 01: broadcast for 10.10.1.64/0
+[PASS] Task 01: network for 10.10.1.64/0
+[PASS] Task 01: mask for 10.10.1.64/0
+[PASS] Task 01: wildcard for 10.0.0.0/1
+[PASS] Task 01: broadcast for 10.0.0.0/1
+[PASS] Task 01: network for 10.0.0.0/1
+[PASS] Task 01: mask for 10.0.0.0/1
+[PASS] Task 01: wildcard for 192.168.1.0/1
+[PASS] Task 01: broadcast for 192.168.1.0/1
+[PASS] Task 01: network for 192.168.1.0/1
+[PASS] Task 01: mask for 192.168.1.0/1
+[PASS] Task 01: wildcard for 172.16.0.0/1
+[PASS] Task 01: broadcast for 172.16.0.0/1
+[PASS] Task 01: network for 172.16.0.0/1
+[PASS] Task 01: mask for 172.16.0.0/1
+[PASS] Task 01: wildcard for 255.255.255.255/1
+[PASS] Task 01: broadcast for 255.255.255.255/1
+[PASS] Task 01: network for 255.255.255.255/1
+[PASS] Task 01: mask for 255.255.255.255/1
+[PASS] Task 01: wildcard for 0.0.0.0/1
+[PASS] Task 01: broadcast for 0.0.0.0/1
+[PASS] Task 01: network for 0.0.0.0/1
+[PASS] Task 01: mask for 0.0.0.0/1
+[PASS] Task 01: wildcard for 10.10.1.64/1
+[PASS] Task 01: broadcast for 10.10.1.64/1
+[PASS] Task 01: network for 10.10.1.64/1
+[PASS] Task 01: mask for 10.10.1.64/1
+[PASS] Task 01: wildcard for 10.0.0.0/2
+[PASS] Task 01: broadcast for 10.0.0.0/2
+[PASS] Task 01: network for 10.0.0.0/2
+[PASS] Task 01: mask for 10.0.0.0/2
+[PASS] Task 01: wildcard for 192.168.1.0/2
+[PASS] Task 01: broadcast for 192.168.1.0/2
+[PASS] Task 01: network for 192.168.1.0/2
+[PASS] Task 01: mask for 192.168.1.0/2
+[PASS] Task 01: wildcard for 172.16.0.0/2
+[PASS] Task 01: broadcast for 172.16.0.0/2
+[PASS] Task 01: network for 172.16.0.0/2
+[PASS] Task 01: mask for 172.16.0.0/2
+[PASS] Task 01: wildcard for 255.255.255.255/2
+[PASS] Task 01: broadcast for 255.255.255.255/2
+[PASS] Task 01: network for 255.255.255.255/2
+[PASS] Task 01: mask for 255.255.255.255/2
+[PASS] Task 01: wildcard for 0.0.0.0/2
+[PASS] Task 01: broadcast for 0.0.0.0/2
+[PASS] Task 01: network for 0.0.0.0/2
+[PASS] Task 01: mask for 0.0.0.0/2
+[PASS] Task 01: wildcard for 10.10.1.64/2
+[PASS] Task 01: broadcast for 10.10.1.64/2
+[PASS] Task 01: network for 10.10.1.64/2
+[PASS] Task 01: mask for 10.10.1.64/2
+[PASS] Task 01: wildcard for 10.0.0.0/3
+[PASS] Task 01: broadcast for 10.0.0.0/3
+[PASS] Task 01: network for 10.0.0.0/3
+[PASS] Task 01: mask for 10.0.0.0/3
+[PASS] Task 01: wildcard for 192.168.1.0/3
+[PASS] Task 01: broadcast for 192.168.1.0/3
+[PASS] Task 01: network for 192.168.1.0/3
+[PASS] Task 01: mask for 192.168.1.0/3
+[PASS] Task 01: wildcard for 172.16.0.0/3
+[PASS] Task 01: broadcast for 172.16.0.0/3
+[PASS] Task 01: network for 172.16.0.0/3
+[PASS] Task 01: mask for 172.16.0.0/3
+[PASS] Task 01: wildcard for 255.255.255.255/3
+[PASS] Task 01: broadcast for 255.255.255.255/3
+[PASS] Task 01: network for 255.255.255.255/3
+[PASS] Task 01: mask for 255.255.255.255/3
+[PASS] Task 01: wildcard for 0.0.0.0/3
+[PASS] Task 01: broadcast for 0.0.0.0/3
+[PASS] Task 01: network for 0.0.0.0/3
+[PASS] Task 01: mask for 0.0.0.0/3
+[PASS] Task 01: wildcard for 10.10.1.64/3
+[PASS] Task 01: broadcast for 10.10.1.64/3
+[PASS] Task 01: network for 10.10.1.64/3
+[PASS] Task 01: mask for 10.10.1.64/3
+[PASS] Task 01: wildcard for 10.0.0.0/4
+[PASS] Task 01: broadcast for 10.0.0.0/4
+[PASS] Task 01: network for 10.0.0.0/4
+[PASS] Task 01: mask for 10.0.0.0/4
+[PASS] Task 01: wildcard for 192.168.1.0/4
+[PASS] Task 01: broadcast for 192.168.1.0/4
+[PASS] Task 01: network for 192.168.1.0/4
+[PASS] Task 01: mask for 192.168.1.0/4
+[PASS] Task 01: wildcard for 172.16.0.0/4
+[PASS] Task 01: broadcast for 172.16.0.0/4
+[PASS] Task 01: network for 172.16.0.0/4
+[PASS] Task 01: mask for 172.16.0.0/4
+[PASS] Task 01: wildcard for 255.255.255.255/4
+[PASS] Task 01: broadcast for 255.255.255.255/4
+[PASS] Task 01: network for 255.255.255.255/4
+[PASS] Task 01: mask for 255.255.255.255/4
+[PASS] Task 01: wildcard for 0.0.0.0/4
+[PASS] Task 01: broadcast for 0.0.0.0/4
+[PASS] Task 01: network for 0.0.0.0/4
+[PASS] Task 01: mask for 0.0.0.0/4
+[PASS] Task 01: wildcard for 10.10.1.64/4
+[PASS] Task 01: broadcast for 10.10.1.64/4
+[PASS] Task 01: network for 10.10.1.64/4
+[PASS] Task 01: mask for 10.10.1.64/4
+[PASS] Task 01: wildcard for 10.0.0.0/5
+[PASS] Task 01: broadcast for 10.0.0.0/5
+[PASS] Task 01: network for 10.0.0.0/5
+[PASS] Task 01: mask for 10.0.0.0/5
+[PASS] Task 01: wildcard for 192.168.1.0/5
+[PASS] Task 01: broadcast for 192.168.1.0/5
+[PASS] Task 01: network for 192.168.1.0/5
+[PASS] Task 01: mask for 192.168.1.0/5
+[PASS] Task 01: wildcard for 172.16.0.0/5
+[PASS] Task 01: broadcast for 172.16.0.0/5
+[PASS] Task 01: network for 172.16.0.0/5
+[PASS] Task 01: mask for 172.16.0.0/5
+[PASS] Task 01: wildcard for 255.255.255.255/5
+[PASS] Task 01: broadcast for 255.255.255.255/5
+[PASS] Task 01: network for 255.255.255.255/5
+[PASS] Task 01: mask for 255.255.255.255/5
+[PASS] Task 01: wildcard for 0.0.0.0/5
+[PASS] Task 01: broadcast for 0.0.0.0/5
+[PASS] Task 01: network for 0.0.0.0/5
+[PASS] Task 01: mask for 0.0.0.0/5
+[PASS] Task 01: wildcard for 10.10.1.64/5
+[PASS] Task 01: broadcast for 10.10.1.64/5
+[PASS] Task 01: network for 10.10.1.64/5
+[PASS] Task 01: mask for 10.10.1.64/5
+[PASS] Task 01: wildcard for 10.0.0.0/6
+[PASS] Task 01: broadcast for 10.0.0.0/6
+[PASS] Task 01: network for 10.0.0.0/6
+[PASS] Task 01: mask for 10.0.0.0/6
+[PASS] Task 01: wildcard for 192.168.1.0/6
+[PASS] Task 01: broadcast for 192.168.1.0/6
+[PASS] Task 01: network for 192.168.1.0/6
+[PASS] Task 01: mask for 192.168.1.0/6
+[PASS] Task 01: wildcard for 172.16.0.0/6
+[PASS] Task 01: broadcast for 172.16.0.0/6
+[PASS] Task 01: network for 172.16.0.0/6
+[PASS] Task 01: mask for 172.16.0.0/6
+[PASS] Task 01: wildcard for 255.255.255.255/6
+[PASS] Task 01: broadcast for 255.255.255.255/6
+[PASS] Task 01: network for 255.255.255.255/6
+[PASS] Task 01: mask for 255.255.255.255/6
+[PASS] Task 01: wildcard for 0.0.0.0/6
+[PASS] Task 01: broadcast for 0.0.0.0/6
+[PASS] Task 01: network for 0.0.0.0/6
+[PASS] Task 01: mask for 0.0.0.0/6
+[PASS] Task 01: wildcard for 10.10.1.64/6
+[PASS] Task 01: broadcast for 10.10.1.64/6
+[PASS] Task 01: network for 10.10.1.64/6
+[PASS] Task 01: mask for 10.10.1.64/6
+[PASS] Task 01: wildcard for 10.0.0.0/7
+[PASS] Task 01: broadcast for 10.0.0.0/7
+[PASS] Task 01: network for 10.0.0.0/7
+[PASS] Task 01: mask for 10.0.0.0/7
+[PASS] Task 01: wildcard for 192.168.1.0/7
+[PASS] Task 01: broadcast for 192.168.1.0/7
+[PASS] Task 01: network for 192.168.1.0/7
+[PASS] Task 01: mask for 192.168.1.0/7
+[PASS] Task 01: wildcard for 172.16.0.0/7
+[PASS] Task 01: broadcast for 172.16.0.0/7
+[PASS] Task 01: network for 172.16.0.0/7
+[PASS] Task 01: mask for 172.16.0.0/7
+[PASS] Task 01: wildcard for 255.255.255.255/7
+[PASS] Task 01: broadcast for 255.255.255.255/7
+[PASS] Task 01: network for 255.255.255.255/7
+[PASS] Task 01: mask for 255.255.255.255/7
+[PASS] Task 01: wildcard for 0.0.0.0/7
+[PASS] Task 01: broadcast for 0.0.0.0/7
+[PASS] Task 01: network for 0.0.0.0/7
+[PASS] Task 01: mask for 0.0.0.0/7
+[PASS] Task 01: wildcard for 10.10.1.64/7
+[PASS] Task 01: broadcast for 10.10.1.64/7
+[PASS] Task 01: network for 10.10.1.64/7
+[PASS] Task 01: mask for 10.10.1.64/7
+[PASS] Task 01: wildcard for 10.0.0.0/8
+[PASS] Task 01: broadcast for 10.0.0.0/8
+[PASS] Task 01: network for 10.0.0.0/8
+[PASS] Task 01: mask for 10.0.0.0/8
+[PASS] Task 01: wildcard for 192.168.1.0/8
+[PASS] Task 01: broadcast for 192.168.1.0/8
+[PASS] Task 01: network for 192.168.1.0/8
+[PASS] Task 01: mask for 192.168.1.0/8
+[PASS] Task 01: wildcard for 172.16.0.0/8
+[PASS] Task 01: broadcast for 172.16.0.0/8
+[PASS] Task 01: network for 172.16.0.0/8
+[PASS] Task 01: mask for 172.16.0.0/8
+[PASS] Task 01: wildcard for 255.255.255.255/8
+[PASS] Task 01: broadcast for 255.255.255.255/8
+[PASS] Task 01: network for 255.255.255.255/8
+[PASS] Task 01: mask for 255.255.255.255/8
+[PASS] Task 01: wildcard for 0.0.0.0/8
+[PASS] Task 01: broadcast for 0.0.0.0/8
+[PASS] Task 01: network for 0.0.0.0/8
+[PASS] Task 01: mask for 0.0.0.0/8
+[PASS] Task 01: wildcard for 10.10.1.64/8
+[PASS] Task 01: broadcast for 10.10.1.64/8
+[PASS] Task 01: network for 10.10.1.64/8
+[PASS] Task 01: mask for 10.10.1.64/8
+[PASS] Task 01: wildcard for 10.0.0.0/9
+[PASS] Task 01: broadcast for 10.0.0.0/9
+[PASS] Task 01: network for 10.0.0.0/9
+[PASS] Task 01: mask for 10.0.0.0/9
+[PASS] Task 01: wildcard for 192.168.1.0/9
+[PASS] Task 01: broadcast for 192.168.1.0/9
+[PASS] Task 01: network for 192.168.1.0/9
+[PASS] Task 01: mask for 192.168.1.0/9
+[PASS] Task 01: wildcard for 172.16.0.0/9
+[PASS] Task 01: broadcast for 172.16.0.0/9
+[PASS] Task 01: network for 172.16.0.0/9
+[PASS] Task 01: mask for 172.16.0.0/9
+[PASS] Task 01: wildcard for 255.255.255.255/9
+[PASS] Task 01: broadcast for 255.255.255.255/9
+[PASS] Task 01: network for 255.255.255.255/9
+[PASS] Task 01: mask for 255.255.255.255/9
+[PASS] Task 01: wildcard for 0.0.0.0/9
+[PASS] Task 01: broadcast for 0.0.0.0/9
+[PASS] Task 01: network for 0.0.0.0/9
+[PASS] Task 01: mask for 0.0.0.0/9
+[PASS] Task 01: wildcard for 10.10.1.64/9
+[PASS] Task 01: broadcast for 10.10.1.64/9
+[PASS] Task 01: network for 10.10.1.64/9
+[PASS] Task 01: mask for 10.10.1.64/9
+[PASS] Task 01: wildcard for 10.0.0.0/10
+[PASS] Task 01: broadcast for 10.0.0.0/10
+[PASS] Task 01: network for 10.0.0.0/10
+[PASS] Task 01: mask for 10.0.0.0/10
+[PASS] Task 01: wildcard for 192.168.1.0/10
+[PASS] Task 01: broadcast for 192.168.1.0/10
+[PASS] Task 01: network for 192.168.1.0/10
+[PASS] Task 01: mask for 192.168.1.0/10
+[PASS] Task 01: wildcard for 172.16.0.0/10
+[PASS] Task 01: broadcast for 172.16.0.0/10
+[PASS] Task 01: network for 172.16.0.0/10
+[PASS] Task 01: mask for 172.16.0.0/10
+[PASS] Task 01: wildcard for 255.255.255.255/10
+[PASS] Task 01: broadcast for 255.255.255.255/10
+[PASS] Task 01: network for 255.255.255.255/10
+[PASS] Task 01: mask for 255.255.255.255/10
+[PASS] Task 01: wildcard for 0.0.0.0/10
+[PASS] Task 01: broadcast for 0.0.0.0/10
+[PASS] Task 01: network for 0.0.0.0/10
+[PASS] Task 01: mask for 0.0.0.0/10
+[PASS] Task 01: wildcard for 10.10.1.64/10
+[PASS] Task 01: broadcast for 10.10.1.64/10
+[PASS] Task 01: network for 10.10.1.64/10
+[PASS] Task 01: mask for 10.10.1.64/10
+[PASS] Task 01: wildcard for 10.0.0.0/11
+[PASS] Task 01: broadcast for 10.0.0.0/11
+[PASS] Task 01: network for 10.0.0.0/11
+[PASS] Task 01: mask for 10.0.0.0/11
+[PASS] Task 01: wildcard for 192.168.1.0/11
+[PASS] Task 01: broadcast for 192.168.1.0/11
+[PASS] Task 01: network for 192.168.1.0/11
+[PASS] Task 01: mask for 192.168.1.0/11
+[PASS] Task 01: wildcard for 172.16.0.0/11
+[PASS] Task 01: broadcast for 172.16.0.0/11
+[PASS] Task 01: network for 172.16.0.0/11
+[PASS] Task 01: mask for 172.16.0.0/11
+[PASS] Task 01: wildcard for 255.255.255.255/11
+[PASS] Task 01: broadcast for 255.255.255.255/11
+[PASS] Task 01: network for 255.255.255.255/11
+[PASS] Task 01: mask for 255.255.255.255/11
+[PASS] Task 01: wildcard for 0.0.0.0/11
+[PASS] Task 01: broadcast for 0.0.0.0/11
+[PASS] Task 01: network for 0.0.0.0/11
+[PASS] Task 01: mask for 0.0.0.0/11
+[PASS] Task 01: wildcard for 10.10.1.64/11
+[PASS] Task 01: broadcast for 10.10.1.64/11
+[PASS] Task 01: network for 10.10.1.64/11
+[PASS] Task 01: mask for 10.10.1.64/11
+[PASS] Task 01: wildcard for 10.0.0.0/12
+[PASS] Task 01: broadcast for 10.0.0.0/12
+[PASS] Task 01: network for 10.0.0.0/12
+[PASS] Task 01: mask for 10.0.0.0/12
+[PASS] Task 01: wildcard for 192.168.1.0/12
+[PASS] Task 01: broadcast for 192.168.1.0/12
+[PASS] Task 01: network for 192.168.1.0/12
+[PASS] Task 01: mask for 192.168.1.0/12
+[PASS] Task 01: wildcard for 172.16.0.0/12
+[PASS] Task 01: broadcast for 172.16.0.0/12
+[PASS] Task 01: network for 172.16.0.0/12
+[PASS] Task 01: mask for 172.16.0.0/12
+[PASS] Task 01: wildcard for 255.255.255.255/12
+[PASS] Task 01: broadcast for 255.255.255.255/12
+[PASS] Task 01: network for 255.255.255.255/12
+[PASS] Task 01: mask for 255.255.255.255/12
+[PASS] Task 01: wildcard for 0.0.0.0/12
+[PASS] Task 01: broadcast for 0.0.0.0/12
+[PASS] Task 01: network for 0.0.0.0/12
+[PASS] Task 01: mask for 0.0.0.0/12
+[PASS] Task 01: wildcard for 10.10.1.64/12
+[PASS] Task 01: broadcast for 10.10.1.64/12
+[PASS] Task 01: network for 10.10.1.64/12
+[PASS] Task 01: mask for 10.10.1.64/12
+[PASS] Task 01: wildcard for 10.0.0.0/13
+[PASS] Task 01: broadcast for 10.0.0.0/13
+[PASS] Task 01: network for 10.0.0.0/13
+[PASS] Task 01: mask for 10.0.0.0/13
+[PASS] Task 01: wildcard for 192.168.1.0/13
+[PASS] Task 01: broadcast for 192.168.1.0/13
+[PASS] Task 01: network for 192.168.1.0/13
+[PASS] Task 01: mask for 192.168.1.0/13
+[PASS] Task 01: wildcard for 172.16.0.0/13
+[PASS] Task 01: broadcast for 172.16.0.0/13
+[PASS] Task 01: network for 172.16.0.0/13
+[PASS] Task 01: mask for 172.16.0.0/13
+[PASS] Task 01: wildcard for 255.255.255.255/13
+[PASS] Task 01: broadcast for 255.255.255.255/13
+[PASS] Task 01: network for 255.255.255.255/13
+[PASS] Task 01: mask for 255.255.255.255/13
+[PASS] Task 01: wildcard for 0.0.0.0/13
+[PASS] Task 01: broadcast for 0.0.0.0/13
+[PASS] Task 01: network for 0.0.0.0/13
+[PASS] Task 01: mask for 0.0.0.0/13
+[PASS] Task 01: wildcard for 10.10.1.64/13
+[PASS] Task 01: broadcast for 10.10.1.64/13
+[PASS] Task 01: network for 10.10.1.64/13
+[PASS] Task 01: mask for 10.10.1.64/13
+[PASS] Task 01: wildcard for 10.0.0.0/14
+[PASS] Task 01: broadcast for 10.0.0.0/14
+[PASS] Task 01: network for 10.0.0.0/14
+[PASS] Task 01: mask for 10.0.0.0/14
+[PASS] Task 01: wildcard for 192.168.1.0/14
+[PASS] Task 01: broadcast for 192.168.1.0/14
+[PASS] Task 01: network for 192.168.1.0/14
+[PASS] Task 01: mask for 192.168.1.0/14
+[PASS] Task 01: wildcard for 172.16.0.0/14
+[PASS] Task 01: broadcast for 172.16.0.0/14
+[PASS] Task 01: network for 172.16.0.0/14
+[PASS] Task 01: mask for 172.16.0.0/14
+[PASS] Task 01: wildcard for 255.255.255.255/14
+[PASS] Task 01: broadcast for 255.255.255.255/14
+[PASS] Task 01: network for 255.255.255.255/14
+[PASS] Task 01: mask for 255.255.255.255/14
+[PASS] Task 01: wildcard for 0.0.0.0/14
+[PASS] Task 01: broadcast for 0.0.0.0/14
+[PASS] Task 01: network for 0.0.0.0/14
+[PASS] Task 01: mask for 0.0.0.0/14
+[PASS] Task 01: wildcard for 10.10.1.64/14
+[PASS] Task 01: broadcast for 10.10.1.64/14
+[PASS] Task 01: network for 10.10.1.64/14
+[PASS] Task 01: mask for 10.10.1.64/14
+[PASS] Task 01: wildcard for 10.0.0.0/15
+[PASS] Task 01: broadcast for 10.0.0.0/15
+[PASS] Task 01: network for 10.0.0.0/15
+[PASS] Task 01: mask for 10.0.0.0/15
+[PASS] Task 01: wildcard for 192.168.1.0/15
+[PASS] Task 01: broadcast for 192.168.1.0/15
+[PASS] Task 01: network for 192.168.1.0/15
+[PASS] Task 01: mask for 192.168.1.0/15
+[PASS] Task 01: wildcard for 172.16.0.0/15
+[PASS] Task 01: broadcast for 172.16.0.0/15
+[PASS] Task 01: network for 172.16.0.0/15
+[PASS] Task 01: mask for 172.16.0.0/15
+[PASS] Task 01: wildcard for 255.255.255.255/15
+[PASS] Task 01: broadcast for 255.255.255.255/15
+[PASS] Task 01: network for 255.255.255.255/15
+[PASS] Task 01: mask for 255.255.255.255/15
+[PASS] Task 01: wildcard for 0.0.0.0/15
+[PASS] Task 01: broadcast for 0.0.0.0/15
+[PASS] Task 01: network for 0.0.0.0/15
+[PASS] Task 01: mask for 0.0.0.0/15
+[PASS] Task 01: wildcard for 10.10.1.64/15
+[PASS] Task 01: broadcast for 10.10.1.64/15
+[PASS] Task 01: network for 10.10.1.64/15
+[PASS] Task 01: mask for 10.10.1.64/15
+[PASS] Task 01: wildcard for 10.0.0.0/16
+[PASS] Task 01: broadcast for 10.0.0.0/16
+[PASS] Task 01: network for 10.0.0.0/16
+[PASS] Task 01: mask for 10.0.0.0/16
+[PASS] Task 01: wildcard for 192.168.1.0/16
+[PASS] Task 01: broadcast for 192.168.1.0/16
+[PASS] Task 01: network for 192.168.1.0/16
+[PASS] Task 01: mask for 192.168.1.0/16
+[PASS] Task 01: wildcard for 172.16.0.0/16
+[PASS] Task 01: broadcast for 172.16.0.0/16
+[PASS] Task 01: network for 172.16.0.0/16
+[PASS] Task 01: mask for 172.16.0.0/16
+[PASS] Task 01: wildcard for 255.255.255.255/16
+[PASS] Task 01: broadcast for 255.255.255.255/16
+[PASS] Task 01: network for 255.255.255.255/16
+[PASS] Task 01: mask for 255.255.255.255/16
+[PASS] Task 01: wildcard for 0.0.0.0/16
+[PASS] Task 01: broadcast for 0.0.0.0/16
+[PASS] Task 01: network for 0.0.0.0/16
+[PASS] Task 01: mask for 0.0.0.0/16
+[PASS] Task 01: wildcard for 10.10.1.64/16
+[PASS] Task 01: broadcast for 10.10.1.64/16
+[PASS] Task 01: network for 10.10.1.64/16
+[PASS] Task 01: mask for 10.10.1.64/16
+[PASS] Task 01: wildcard for 10.0.0.0/17
+[PASS] Task 01: broadcast for 10.0.0.0/17
+[PASS] Task 01: network for 10.0.0.0/17
+[PASS] Task 01: mask for 10.0.0.0/17
+[PASS] Task 01: wildcard for 192.168.1.0/17
+[PASS] Task 01: broadcast for 192.168.1.0/17
+[PASS] Task 01: network for 192.168.1.0/17
+[PASS] Task 01: mask for 192.168.1.0/17
+[PASS] Task 01: wildcard for 172.16.0.0/17
+[PASS] Task 01: broadcast for 172.16.0.0/17
+[PASS] Task 01: network for 172.16.0.0/17
+[PASS] Task 01: mask for 172.16.0.0/17
+[PASS] Task 01: wildcard for 255.255.255.255/17
+[PASS] Task 01: broadcast for 255.255.255.255/17
+[PASS] Task 01: network for 255.255.255.255/17
+[PASS] Task 01: mask for 255.255.255.255/17
+[PASS] Task 01: wildcard for 0.0.0.0/17
+[PASS] Task 01: broadcast for 0.0.0.0/17
+[PASS] Task 01: network for 0.0.0.0/17
+[PASS] Task 01: mask for 0.0.0.0/17
+[PASS] Task 01: wildcard for 10.10.1.64/17
+[PASS] Task 01: broadcast for 10.10.1.64/17
+[PASS] Task 01: network for 10.10.1.64/17
+[PASS] Task 01: mask for 10.10.1.64/17
+[PASS] Task 01: wildcard for 10.0.0.0/18
+[PASS] Task 01: broadcast for 10.0.0.0/18
+[PASS] Task 01: network for 10.0.0.0/18
+[PASS] Task 01: mask for 10.0.0.0/18
+[PASS] Task 01: wildcard for 192.168.1.0/18
+[PASS] Task 01: broadcast for 192.168.1.0/18
+[PASS] Task 01: network for 192.168.1.0/18
+[PASS] Task 01: mask for 192.168.1.0/18
+[PASS] Task 01: wildcard for 172.16.0.0/18
+[PASS] Task 01: broadcast for 172.16.0.0/18
+[PASS] Task 01: network for 172.16.0.0/18
+[PASS] Task 01: mask for 172.16.0.0/18
+[PASS] Task 01: wildcard for 255.255.255.255/18
+[PASS] Task 01: broadcast for 255.255.255.255/18
+[PASS] Task 01: network for 255.255.255.255/18
+[PASS] Task 01: mask for 255.255.255.255/18
+[PASS] Task 01: wildcard for 0.0.0.0/18
+[PASS] Task 01: broadcast for 0.0.0.0/18
+[PASS] Task 01: network for 0.0.0.0/18
+[PASS] Task 01: mask for 0.0.0.0/18
+[PASS] Task 01: wildcard for 10.10.1.64/18
+[PASS] Task 01: broadcast for 10.10.1.64/18
+[PASS] Task 01: network for 10.10.1.64/18
+[PASS] Task 01: mask for 10.10.1.64/18
+[PASS] Task 01: wildcard for 10.0.0.0/19
+[PASS] Task 01: broadcast for 10.0.0.0/19
+[PASS] Task 01: network for 10.0.0.0/19
+[PASS] Task 01: mask for 10.0.0.0/19
+[PASS] Task 01: wildcard for 192.168.1.0/19
+[PASS] Task 01: broadcast for 192.168.1.0/19
+[PASS] Task 01: network for 192.168.1.0/19
+[PASS] Task 01: mask for 192.168.1.0/19
+[PASS] Task 01: wildcard for 172.16.0.0/19
+[PASS] Task 01: broadcast for 172.16.0.0/19
+[PASS] Task 01: network for 172.16.0.0/19
+[PASS] Task 01: mask for 172.16.0.0/19
+[PASS] Task 01: wildcard for 255.255.255.255/19
+[PASS] Task 01: broadcast for 255.255.255.255/19
+[PASS] Task 01: network for 255.255.255.255/19
+[PASS] Task 01: mask for 255.255.255.255/19
+[PASS] Task 01: wildcard for 0.0.0.0/19
+[PASS] Task 01: broadcast for 0.0.0.0/19
+[PASS] Task 01: network for 0.0.0.0/19
+[PASS] Task 01: mask for 0.0.0.0/19
+[PASS] Task 01: wildcard for 10.10.1.64/19
+[PASS] Task 01: broadcast for 10.10.1.64/19
+[PASS] Task 01: network for 10.10.1.64/19
+[PASS] Task 01: mask for 10.10.1.64/19
+[PASS] Task 01: wildcard for 10.0.0.0/20
+[PASS] Task 01: broadcast for 10.0.0.0/20
+[PASS] Task 01: network for 10.0.0.0/20
+[PASS] Task 01: mask for 10.0.0.0/20
+[PASS] Task 01: wildcard for 192.168.1.0/20
+[PASS] Task 01: broadcast for 192.168.1.0/20
+[PASS] Task 01: network for 192.168.1.0/20
+[PASS] Task 01: mask for 192.168.1.0/20
+[PASS] Task 01: wildcard for 172.16.0.0/20
+[PASS] Task 01: broadcast for 172.16.0.0/20
+[PASS] Task 01: network for 172.16.0.0/20
+[PASS] Task 01: mask for 172.16.0.0/20
+[PASS] Task 01: wildcard for 255.255.255.255/20
+[PASS] Task 01: broadcast for 255.255.255.255/20
+[PASS] Task 01: network for 255.255.255.255/20
+[PASS] Task 01: mask for 255.255.255.255/20
+[PASS] Task 01: wildcard for 0.0.0.0/20
+[PASS] Task 01: broadcast for 0.0.0.0/20
+[PASS] Task 01: network for 0.0.0.0/20
+[PASS] Task 01: mask for 0.0.0.0/20
+[PASS] Task 01: wildcard for 10.10.1.64/20
+[PASS] Task 01: broadcast for 10.10.1.64/20
+[PASS] Task 01: network for 10.10.1.64/20
+[PASS] Task 01: mask for 10.10.1.64/20
+[PASS] Task 01: wildcard for 10.0.0.0/21
+[PASS] Task 01: broadcast for 10.0.0.0/21
+[PASS] Task 01: network for 10.0.0.0/21
+[PASS] Task 01: mask for 10.0.0.0/21
+[PASS] Task 01: wildcard for 192.168.1.0/21
+[PASS] Task 01: broadcast for 192.168.1.0/21
+[PASS] Task 01: network for 192.168.1.0/21
+[PASS] Task 01: mask for 192.168.1.0/21
+[PASS] Task 01: wildcard for 172.16.0.0/21
+[PASS] Task 01: broadcast for 172.16.0.0/21
+[PASS] Task 01: network for 172.16.0.0/21
+[PASS] Task 01: mask for 172.16.0.0/21
+[PASS] Task 01: wildcard for 255.255.255.255/21
+[PASS] Task 01: broadcast for 255.255.255.255/21
+[PASS] Task 01: network for 255.255.255.255/21
+[PASS] Task 01: mask for 255.255.255.255/21
+[PASS] Task 01: wildcard for 0.0.0.0/21
+[PASS] Task 01: broadcast for 0.0.0.0/21
+[PASS] Task 01: network for 0.0.0.0/21
+[PASS] Task 01: mask for 0.0.0.0/21
+[PASS] Task 01: wildcard for 10.10.1.64/21
+[PASS] Task 01: broadcast for 10.10.1.64/21
+[PASS] Task 01: network for 10.10.1.64/21
+[PASS] Task 01: mask for 10.10.1.64/21
+[PASS] Task 01: wildcard for 10.0.0.0/22
+[PASS] Task 01: broadcast for 10.0.0.0/22
+[PASS] Task 01: network for 10.0.0.0/22
+[PASS] Task 01: mask for 10.0.0.0/22
+[PASS] Task 01: wildcard for 192.168.1.0/22
+[PASS] Task 01: broadcast for 192.168.1.0/22
+[PASS] Task 01: network for 192.168.1.0/22
+[PASS] Task 01: mask for 192.168.1.0/22
+[PASS] Task 01: wildcard for 172.16.0.0/22
+[PASS] Task 01: broadcast for 172.16.0.0/22
+[PASS] Task 01: network for 172.16.0.0/22
+[PASS] Task 01: mask for 172.16.0.0/22
+[PASS] Task 01: wildcard for 255.255.255.255/22
+[PASS] Task 01: broadcast for 255.255.255.255/22
+[PASS] Task 01: network for 255.255.255.255/22
+[PASS] Task 01: mask for 255.255.255.255/22
+[PASS] Task 01: wildcard for 0.0.0.0/22
+[PASS] Task 01: broadcast for 0.0.0.0/22
+[PASS] Task 01: network for 0.0.0.0/22
+[PASS] Task 01: mask for 0.0.0.0/22
+[PASS] Task 01: wildcard for 10.10.1.64/22
+[PASS] Task 01: broadcast for 10.10.1.64/22
+[PASS] Task 01: network for 10.10.1.64/22
+[PASS] Task 01: mask for 10.10.1.64/22
+[PASS] Task 01: wildcard for 10.0.0.0/23
+[PASS] Task 01: broadcast for 10.0.0.0/23
+[PASS] Task 01: network for 10.0.0.0/23
+[PASS] Task 01: mask for 10.0.0.0/23
+[PASS] Task 01: wildcard for 192.168.1.0/23
+[PASS] Task 01: broadcast for 192.168.1.0/23
+[PASS] Task 01: network for 192.168.1.0/23
+[PASS] Task 01: mask for 192.168.1.0/23
+[PASS] Task 01: wildcard for 172.16.0.0/23
+[PASS] Task 01: broadcast for 172.16.0.0/23
+[PASS] Task 01: network for 172.16.0.0/23
+[PASS] Task 01: mask for 172.16.0.0/23
+[PASS] Task 01: wildcard for 255.255.255.255/23
+[PASS] Task 01: broadcast for 255.255.255.255/23
+[PASS] Task 01: network for 255.255.255.255/23
+[PASS] Task 01: mask for 255.255.255.255/23
+[PASS] Task 01: wildcard for 0.0.0.0/23
+[PASS] Task 01: broadcast for 0.0.0.0/23
+[PASS] Task 01: network for 0.0.0.0/23
+[PASS] Task 01: mask for 0.0.0.0/23
+[PASS] Task 01: wildcard for 10.10.1.64/23
+[PASS] Task 01: broadcast for 10.10.1.64/23
+[PASS] Task 01: network for 10.10.1.64/23
+[PASS] Task 01: mask for 10.10.1.64/23
+[PASS] Task 01: wildcard for 10.0.0.0/24
+[PASS] Task 01: broadcast for 10.0.0.0/24
+[PASS] Task 01: network for 10.0.0.0/24
+[PASS] Task 01: mask for 10.0.0.0/24
+[PASS] Task 01: wildcard for 192.168.1.0/24
+[PASS] Task 01: broadcast for 192.168.1.0/24
+[PASS] Task 01: network for 192.168.1.0/24
+[PASS] Task 01: mask for 192.168.1.0/24
+[PASS] Task 01: wildcard for 172.16.0.0/24
+[PASS] Task 01: broadcast for 172.16.0.0/24
+[PASS] Task 01: network for 172.16.0.0/24
+[PASS] Task 01: mask for 172.16.0.0/24
+[PASS] Task 01: wildcard for 255.255.255.255/24
+[PASS] Task 01: broadcast for 255.255.255.255/24
+[PASS] Task 01: network for 255.255.255.255/24
+[PASS] Task 01: mask for 255.255.255.255/24
+[PASS] Task 01: wildcard for 0.0.0.0/24
+[PASS] Task 01: broadcast for 0.0.0.0/24
+[PASS] Task 01: network for 0.0.0.0/24
+[PASS] Task 01: mask for 0.0.0.0/24
+[PASS] Task 01: wildcard for 10.10.1.64/24
+[PASS] Task 01: broadcast for 10.10.1.64/24
+[PASS] Task 01: network for 10.10.1.64/24
+[PASS] Task 01: mask for 10.10.1.64/24
+[PASS] Task 01: wildcard for 10.0.0.0/25
+[PASS] Task 01: broadcast for 10.0.0.0/25
+[PASS] Task 01: network for 10.0.0.0/25
+[PASS] Task 01: mask for 10.0.0.0/25
+[PASS] Task 01: wildcard for 192.168.1.0/25
+[PASS] Task 01: broadcast for 192.168.1.0/25
+[PASS] Task 01: network for 192.168.1.0/25
+[PASS] Task 01: mask for 192.168.1.0/25
+[PASS] Task 01: wildcard for 172.16.0.0/25
+[PASS] Task 01: broadcast for 172.16.0.0/25
+[PASS] Task 01: network for 172.16.0.0/25
+[PASS] Task 01: mask for 172.16.0.0/25
+[PASS] Task 01: wildcard for 255.255.255.255/25
+[PASS] Task 01: broadcast for 255.255.255.255/25
+[PASS] Task 01: network for 255.255.255.255/25
+[PASS] Task 01: mask for 255.255.255.255/25
+[PASS] Task 01: wildcard for 0.0.0.0/25
+[PASS] Task 01: broadcast for 0.0.0.0/25
+[PASS] Task 01: network for 0.0.0.0/25
+[PASS] Task 01: mask for 0.0.0.0/25
+[PASS] Task 01: wildcard for 10.10.1.64/25
+[PASS] Task 01: broadcast for 10.10.1.64/25
+[PASS] Task 01: network for 10.10.1.64/25
+[PASS] Task 01: mask for 10.10.1.64/25
+[PASS] Task 01: wildcard for 10.0.0.0/26
+[PASS] Task 01: broadcast for 10.0.0.0/26
+[PASS] Task 01: network for 10.0.0.0/26
+[PASS] Task 01: mask for 10.0.0.0/26
+[PASS] Task 01: wildcard for 192.168.1.0/26
+[PASS] Task 01: broadcast for 192.168.1.0/26
+[PASS] Task 01: network for 192.168.1.0/26
+[PASS] Task 01: mask for 192.168.1.0/26
+[PASS] Task 01: wildcard for 172.16.0.0/26
+[PASS] Task 01: broadcast for 172.16.0.0/26
+[PASS] Task 01: network for 172.16.0.0/26
+[PASS] Task 01: mask for 172.16.0.0/26
+[PASS] Task 01: wildcard for 255.255.255.255/26
+[PASS] Task 01: broadcast for 255.255.255.255/26
+[PASS] Task 01: network for 255.255.255.255/26
+[PASS] Task 01: mask for 255.255.255.255/26
+[PASS] Task 01: wildcard for 0.0.0.0/26
+[PASS] Task 01: broadcast for 0.0.0.0/26
+[PASS] Task 01: network for 0.0.0.0/26
+[PASS] Task 01: mask for 0.0.0.0/26
+[PASS] Task 01: wildcard for 10.10.1.64/26
+[PASS] Task 01: broadcast for 10.10.1.64/26
+[PASS] Task 01: network for 10.10.1.64/26
+[PASS] Task 01: mask for 10.10.1.64/26
+[PASS] Task 01: wildcard for 10.0.0.0/27
+[PASS] Task 01: broadcast for 10.0.0.0/27
+[PASS] Task 01: network for 10.0.0.0/27
+[PASS] Task 01: mask for 10.0.0.0/27
+[PASS] Task 01: wildcard for 192.168.1.0/27
+[PASS] Task 01: broadcast for 192.168.1.0/27
+[PASS] Task 01: network for 192.168.1.0/27
+[PASS] Task 01: mask for 192.168.1.0/27
+[PASS] Task 01: wildcard for 172.16.0.0/27
+[PASS] Task 01: broadcast for 172.16.0.0/27
+[PASS] Task 01: network for 172.16.0.0/27
+[PASS] Task 01: mask for 172.16.0.0/27
+[PASS] Task 01: wildcard for 255.255.255.255/27
+[PASS] Task 01: broadcast for 255.255.255.255/27
+[PASS] Task 01: network for 255.255.255.255/27
+[PASS] Task 01: mask for 255.255.255.255/27
+[PASS] Task 01: wildcard for 0.0.0.0/27
+[PASS] Task 01: broadcast for 0.0.0.0/27
+[PASS] Task 01: network for 0.0.0.0/27
+[PASS] Task 01: mask for 0.0.0.0/27
+[PASS] Task 01: wildcard for 10.10.1.64/27
+[PASS] Task 01: broadcast for 10.10.1.64/27
+[PASS] Task 01: network for 10.10.1.64/27
+[PASS] Task 01: mask for 10.10.1.64/27
+[PASS] Task 01: wildcard for 10.0.0.0/28
+[PASS] Task 01: broadcast for 10.0.0.0/28
+[PASS] Task 01: network for 10.0.0.0/28
+[PASS] Task 01: mask for 10.0.0.0/28
+[PASS] Task 01: wildcard for 192.168.1.0/28
+[PASS] Task 01: broadcast for 192.168.1.0/28
+[PASS] Task 01: network for 192.168.1.0/28
+[PASS] Task 01: mask for 192.168.1.0/28
+[PASS] Task 01: wildcard for 172.16.0.0/28
+[PASS] Task 01: broadcast for 172.16.0.0/28
+[PASS] Task 01: network for 172.16.0.0/28
+[PASS] Task 01: mask for 172.16.0.0/28
+[PASS] Task 01: wildcard for 255.255.255.255/28
+[PASS] Task 01: broadcast for 255.255.255.255/28
+[PASS] Task 01: network for 255.255.255.255/28
+[PASS] Task 01: mask for 255.255.255.255/28
+[PASS] Task 01: wildcard for 0.0.0.0/28
+[PASS] Task 01: broadcast for 0.0.0.0/28
+[PASS] Task 01: network for 0.0.0.0/28
+[PASS] Task 01: mask for 0.0.0.0/28
+[PASS] Task 01: wildcard for 10.10.1.64/28
+[PASS] Task 01: broadcast for 10.10.1.64/28
+[PASS] Task 01: network for 10.10.1.64/28
+[PASS] Task 01: mask for 10.10.1.64/28
+[PASS] Task 01: wildcard for 10.0.0.0/29
+[PASS] Task 01: broadcast for 10.0.0.0/29
+[PASS] Task 01: network for 10.0.0.0/29
+[PASS] Task 01: mask for 10.0.0.0/29
+[PASS] Task 01: wildcard for 192.168.1.0/29
+[PASS] Task 01: broadcast for 192.168.1.0/29
+[PASS] Task 01: network for 192.168.1.0/29
+[PASS] Task 01: mask for 192.168.1.0/29
+[PASS] Task 01: wildcard for 172.16.0.0/29
+[PASS] Task 01: broadcast for 172.16.0.0/29
+[PASS] Task 01: network for 172.16.0.0/29
+[PASS] Task 01: mask for 172.16.0.0/29
+[PASS] Task 01: wildcard for 255.255.255.255/29
+[PASS] Task 01: broadcast for 255.255.255.255/29
+[PASS] Task 01: network for 255.255.255.255/29
+[PASS] Task 01: mask for 255.255.255.255/29
+[PASS] Task 01: wildcard for 0.0.0.0/29
+[PASS] Task 01: broadcast for 0.0.0.0/29
+[PASS] Task 01: network for 0.0.0.0/29
+[PASS] Task 01: mask for 0.0.0.0/29
+[PASS] Task 01: wildcard for 10.10.1.64/29
+[PASS] Task 01: broadcast for 10.10.1.64/29
+[PASS] Task 01: network for 10.10.1.64/29
+[PASS] Task 01: mask for 10.10.1.64/29
+[PASS] Task 01: wildcard for 10.0.0.0/30
+[PASS] Task 01: broadcast for 10.0.0.0/30
+[PASS] Task 01: network for 10.0.0.0/30
+[PASS] Task 01: mask for 10.0.0.0/30
+[PASS] Task 01: wildcard for 192.168.1.0/30
+[PASS] Task 01: broadcast for 192.168.1.0/30
+[PASS] Task 01: network for 192.168.1.0/30
+[PASS] Task 01: mask for 192.168.1.0/30
+[PASS] Task 01: wildcard for 172.16.0.0/30
+[PASS] Task 01: broadcast for 172.16.0.0/30
+[PASS] Task 01: network for 172.16.0.0/30
+[PASS] Task 01: mask for 172.16.0.0/30
+[PASS] Task 01: wildcard for 255.255.255.255/30
+[PASS] Task 01: broadcast for 255.255.255.255/30
+[PASS] Task 01: network for 255.255.255.255/30
+[PASS] Task 01: mask for 255.255.255.255/30
+[PASS] Task 01: wildcard for 0.0.0.0/30
+[PASS] Task 01: broadcast for 0.0.0.0/30
+[PASS] Task 01: network for 0.0.0.0/30
+[PASS] Task 01: mask for 0.0.0.0/30
+[PASS] Task 01: wildcard for 10.10.1.64/30
+[PASS] Task 01: broadcast for 10.10.1.64/30
+[PASS] Task 01: network for 10.10.1.64/30
+[PASS] Task 01: mask for 10.10.1.64/30
+[PASS] Task 01: wildcard for 10.0.0.0/31
+[PASS] Task 01: broadcast for 10.0.0.0/31
+[PASS] Task 01: network for 10.0.0.0/31
+[PASS] Task 01: mask for 10.0.0.0/31
+[PASS] Task 01: wildcard for 192.168.1.0/31
+[PASS] Task 01: broadcast for 192.168.1.0/31
+[PASS] Task 01: network for 192.168.1.0/31
+[PASS] Task 01: mask for 192.168.1.0/31
+[PASS] Task 01: wildcard for 172.16.0.0/31
+[PASS] Task 01: broadcast for 172.16.0.0/31
+[PASS] Task 01: network for 172.16.0.0/31
+[PASS] Task 01: mask for 172.16.0.0/31
+[PASS] Task 01: wildcard for 255.255.255.255/31
+[PASS] Task 01: broadcast for 255.255.255.255/31
+[PASS] Task 01: network for 255.255.255.255/31
+[PASS] Task 01: mask for 255.255.255.255/31
+[PASS] Task 01: wildcard for 0.0.0.0/31
+[PASS] Task 01: broadcast for 0.0.0.0/31
+[PASS] Task 01: network for 0.0.0.0/31
+[PASS] Task 01: mask for 0.0.0.0/31
+[PASS] Task 01: wildcard for 10.10.1.64/31
+[PASS] Task 01: broadcast for 10.10.1.64/31
+[PASS] Task 01: network for 10.10.1.64/31
+[PASS] Task 01: mask for 10.10.1.64/31
+[PASS] Task 01: wildcard for 10.0.0.0/32
+[PASS] Task 01: broadcast for 10.0.0.0/32
+[PASS] Task 01: network for 10.0.0.0/32
+[PASS] Task 01: mask for 10.0.0.0/32
+[PASS] Task 01: wildcard for 192.168.1.0/32
+[PASS] Task 01: broadcast for 192.168.1.0/32
+[PASS] Task 01: network for 192.168.1.0/32
+[PASS] Task 01: mask for 192.168.1.0/32
+[PASS] Task 01: wildcard for 172.16.0.0/32
+[PASS] Task 01: broadcast for 172.16.0.0/32
+[PASS] Task 01: network for 172.16.0.0/32
+[PASS] Task 01: mask for 172.16.0.0/32
+[PASS] Task 01: wildcard for 255.255.255.255/32
+[PASS] Task 01: broadcast for 255.255.255.255/32
+[PASS] Task 01: network for 255.255.255.255/32
+[PASS] Task 01: mask for 255.255.255.255/32
+[PASS] Task 01: wildcard for 0.0.0.0/32
+[PASS] Task 01: broadcast for 0.0.0.0/32
+[PASS] Task 01: network for 0.0.0.0/32
+[PASS] Task 01: mask for 0.0.0.0/32
+[PASS] Task 01: wildcard for 10.10.1.64/32
+[PASS] Task 01: broadcast for 10.10.1.64/32
+[PASS] Task 01: network for 10.10.1.64/32
+[PASS] Task 01: mask for 10.10.1.64/32
+[PASS] Task 01: /31-/32 edge 10.10.1.64/31 wildcard
+[PASS] Task 01: /31-/32 edge 10.10.1.64/31 broadcast
+[PASS] Task 01: /31-/32 edge 10.10.1.64/32 wildcard
+[PASS] Task 01: /31-/32 edge 10.10.1.64/32 broadcast
+[PASS] Task 01: /31-/32 edge 0.0.0.0/0 wildcard
+[PASS] Task 01: /31-/32 edge 0.0.0.0/0 broadcast
+
+[PASS] Task 02: no overlaps in basic allocation
+[PASS] Task 02: all subnets aligned
+[PASS] Task 02: usable >= requested for 192.168.1.0
+[PASS] Task 02: usable >= requested for 192.168.1.128
+[PASS] Task 02: usable >= requested for 192.168.1.192
+[PASS] Task 02: usable >= requested for 192.168.1.224
+[PASS] Task 02: inside root for 192.168.1.0
+[PASS] Task 02: inside root for 192.168.1.128
+[PASS] Task 02: inside root for 192.168.1.192
+[PASS] Task 02: inside root for 192.168.1.224
+[PASS] Task 02: exhaustion raises error
+[PASS] Task 02: descending sort with unsorted input
+[PASS] Task 02: edge case hosts=0 runs
+[PASS] Task 02: edge hosts=0 usable >= 0
+[PASS] Task 02: edge case hosts=1 runs
+[PASS] Task 02: edge hosts=1 usable >= 1
+[PASS] Task 02: edge case hosts=2 runs
+[PASS] Task 02: edge hosts=2 usable >= 2
+
+[PASS] Task 03: ER 35km budget
+[FAIL] Task 03: ER 35km total_loss
+    Expected: 14.45
+    Actual:   15.2
+[FAIL] Task 03: ER 35km margin
+    Expected: -3.35
+    Actual:   -4.1
+[PASS] Task 03: ER 35km feasible
+[PASS] Task 03: LR 8km budget
+[FAIL] Task 03: LR 8km total_loss
+    Expected: 7.2
+    Actual:   7.6
+[FAIL] Task 03: LR 8km margin
+    Expected: -1.0
+    Actual:   -1.4
+[PASS] Task 03: LR 8km feasible
+
+[FAIL] Task 04: trunk has explicit 'switchport trunk allowed vlan' list
+    Expected: switchport trunk allowed vlan <list>
+    Actual:   not found
+[FAIL] Task 04: native VLAN is not 1
+    Expected: explicit native vlan != 1
+    Actual:   no native vlan set (defaults to 1)
+[FAIL] Task 04: access ports have bpduguard
+    Expected: spanning-tree bpduguard enable
+    Actual:   not found
+
+[PASS] Task 05: OSPF wildcard for 10.10.1.0
+[FAIL] Task 05: OSPF wildcard for 10.10.1.64
+    Expected: 0.0.0.31
+    Actual:   0.0.0.63
+[PASS] Task 05: OSPF network statement exists for 10.10.1.0
+[PASS] Task 05: OSPF network statement exists for 10.10.1.64
+[FAIL] Task 05: LAN-facing interfaces are passive
+    Expected: passive-interface on LAN interfaces
+    Actual:   not found
+
+========================================================================
+  SUMMARY
+========================================================================
+
+Total checks: 832  |  Passed: 823  |  Failed: 9
+
+FAILED CHECKS:
+------------------------------------------------------------
+  Task 03: ER 35km total_loss
+    Expected: 14.45
+    Actual:   15.2
+
+  Task 03: ER 35km margin
+    Expected: -3.35
+    Actual:   -4.1
+
+  Task 03: LR 8km total_loss
+    Expected: 7.2
+    Actual:   7.6
+
+  Task 03: LR 8km margin
+    Expected: -1.0
+    Actual:   -1.4
+
+  Task 04: trunk has explicit 'switchport trunk allowed vlan' list
+    Expected: switchport trunk allowed vlan <list>
+    Actual:   not found
+
+  Task 04: native VLAN is not 1
+    Expected: explicit native vlan != 1
+    Actual:   no native vlan set (defaults to 1)
+
+  Task 04: access ports have bpduguard
+    Expected: spanning-tree bpduguard enable
+    Actual:   not found
+
+  Task 05: OSPF wildcard for 10.10.1.64
+    Expected: 0.0.0.31
+    Actual:   0.0.0.63
+
+  Task 05: LAN-facing interfaces are passive
+    Expected: passive-interface on LAN interfaces
+    Actual:   not found
+
+Tasks with failures: ['03', '04', '05']
+
+Γ£ô 3 tasks have real failures ΓåÆ valid audit candidates.
+Audit candidate tasks: ['03', '04', '05']

@@ -1,0 +1,1 @@
+Write Cisco IOS config for an access switch with VLANs 10, 20, 30 and a trunk port to the core.

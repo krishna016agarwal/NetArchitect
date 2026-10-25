@@ -1,0 +1,5 @@
+"""Entry point for python -m netarchitect."""
+from netarchitect.cli import main
+
+if __name__ == "__main__":
+    main()

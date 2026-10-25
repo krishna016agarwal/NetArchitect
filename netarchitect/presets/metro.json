@@ -1,0 +1,80 @@
+{
+  "profile": "metro",
+  "root_prefix": "172.16.0.0/16",
+  "resiliency": true,
+  "sites": [
+    {
+      "name": "HQ",
+      "devices": [
+        {
+          "name": "RTR-HQ",
+          "type": "router"
+        }
+      ]
+    },
+    {
+      "name": "R1",
+      "devices": [
+        {
+          "name": "RTR-R1",
+          "type": "router"
+        }
+      ]
+    },
+    {
+      "name": "R2",
+      "devices": [
+        {
+          "name": "RTR-R2",
+          "type": "router"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "a": "HQ",
+      "b": "R1",
+      "distance_m": 15000
+    },
+    {
+      "a": "HQ",
+      "b": "R2",
+      "distance_m": 35000
+    },
+    {
+      "a": "R1",
+      "b": "R2",
+      "distance_m": 28000
+    }
+  ],
+  "vlans": [
+    {
+      "id": 10,
+      "name": "HQ-Users",
+      "hosts": 250,
+      "site": "HQ"
+    },
+    {
+      "id": 20,
+      "name": "Colo-Servers",
+      "hosts": 100,
+      "site": "HQ"
+    },
+    {
+      "id": 30,
+      "name": "R1-Users",
+      "hosts": 120,
+      "site": "R1"
+    },
+    {
+      "id": 40,
+      "name": "R2-Users",
+      "hosts": 80,
+      "site": "R2"
+    }
+  ],
+  "extras": {
+    "qos_target_ms": 5
+  }
+}

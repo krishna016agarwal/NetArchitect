@@ -1,0 +1,25 @@
+! Cisco IOS OSPF Configuration (FIXED)
+! Correct /27 wildcard mask (0.0.0.31) and passive interfaces on LAN links
+
+hostname OSPF-ROUTER
+!
+no ip domain-lookup
+!
+interface GigabitEthernet0/0
+ description LAN Subnet 10.10.1.0/26
+ ip address 10.10.1.1 255.255.255.192
+ no shutdown
+!
+interface GigabitEthernet0/1
+ description LAN Subnet 10.10.1.64/27
+ ip address 10.10.1.65 255.255.255.224
+ no shutdown
+!
+router ospf 1
+ router-id 1.1.1.1
+ network 10.10.1.0 0.0.0.63 area 0
+ network 10.10.1.64 0.0.0.31 area 0
+ passive-interface GigabitEthernet0/0
+ passive-interface GigabitEthernet0/1
+!
+end

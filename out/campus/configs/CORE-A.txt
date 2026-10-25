@@ -1,0 +1,116 @@
+! ===== DEVICE: CORE-A =====
+!
+hostname CORE-A
+no ip domain-lookup
+!
+! --- VLAN Configuration (IEEE 802.1Q) ---
+vlan 10
+ name Admin
+vlan 20
+ name Servers
+vlan 30
+ name Mgmt
+vlan 40
+ name CCTV
+vlan 999
+ name NATIVE
+!
+! --- Spanning Tree (IEEE 802.1w RSTP) ---
+spanning-tree mode rapid-pvst
+spanning-tree vlan 10 priority 4096
+spanning-tree vlan 20 priority 4096
+spanning-tree vlan 30 priority 4096
+spanning-tree vlan 40 priority 4096
+!
+! --- Layer 3 Routing ---
+ip routing
+!
+! --- SVI Interfaces ---
+interface Vlan10
+ description Admin SVI
+ ip address 10.10.8.1 255.255.255.0
+ no shutdown
+!
+interface Vlan20
+ description Servers SVI
+ ip address 10.10.9.65 255.255.255.192
+ no shutdown
+!
+interface Vlan30
+ description Mgmt SVI
+ ip address 10.10.9.1 255.255.255.192
+ no shutdown
+!
+interface Vlan40
+ description CCTV SVI
+ ip address 10.10.9.129 255.255.255.224
+ no shutdown
+!
+! --- Access Ports ---
+interface GigabitEthernet1/0/11
+ description Admin access
+ switchport mode access
+ switchport access vlan 10
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+ no shutdown
+!
+interface GigabitEthernet1/0/21
+ description Servers access
+ switchport mode access
+ switchport access vlan 20
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+ no shutdown
+!
+interface GigabitEthernet1/0/31
+ description Mgmt access
+ switchport mode access
+ switchport access vlan 30
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+ no shutdown
+!
+interface GigabitEthernet1/0/41
+ description CCTV access
+ switchport mode access
+ switchport access vlan 40
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+ no shutdown
+!
+! --- Routed Point-to-Point Ports ---
+interface GigabitEthernet0/1
+ description P2P to B-Academic
+ no switchport
+ ip address 10.10.128.1 255.255.255.252
+ no shutdown
+!
+interface GigabitEthernet0/2
+ description P2P to C-Hostel
+ no switchport
+ ip address 10.10.128.5 255.255.255.252
+ no shutdown
+!
+! --- Loopback Interfaces ---
+interface Loopback0
+ description Router-ID CORE-A
+ ip address 10.10.128.12 255.255.255.255
+ no shutdown
+!
+! --- OSPF Configuration (RFC 2328) ---
+router ospf 1
+ router-id 10.10.128.12
+ network 10.10.8.0 0.0.0.255 area 0
+ network 10.10.9.64 0.0.0.63 area 0
+ network 10.10.9.0 0.0.0.63 area 0
+ network 10.10.9.128 0.0.0.31 area 0
+ network 10.10.128.0 0.0.0.3 area 0
+ network 10.10.128.4 0.0.0.3 area 0
+ network 10.10.128.12 0.0.0.0 area 0
+ passive-interface Vlan10
+ passive-interface Vlan20
+ passive-interface Vlan30
+ passive-interface Vlan40
+!
+end

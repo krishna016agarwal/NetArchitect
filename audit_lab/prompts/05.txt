@@ -1,0 +1,1 @@
+Write Cisco IOS OSPF config for a router with interfaces 10.10.1.0/26 and 10.10.1.64/27 in area 0.

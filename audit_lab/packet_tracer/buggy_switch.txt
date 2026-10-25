@@ -1,0 +1,42 @@
+! Cisco IOS Access Switch Configuration (BUGGY AI DRAFT 04)
+! VLANs 10, 20, 30 with trunk to core
+
+hostname ACCESS-SW1
+!
+vlan 10
+ name DATA
+!
+vlan 20
+ name VOICE
+!
+vlan 30
+ name MANAGEMENT
+!
+! Trunk port to core switch
+interface GigabitEthernet0/1
+ switchport mode trunk
+ switchport trunk encapsulation dot1q
+ no shutdown
+!
+! Access ports - VLAN 10
+interface range GigabitEthernet0/2-12
+ switchport mode access
+ switchport access vlan 10
+ spanning-tree portfast
+ no shutdown
+!
+! Access ports - VLAN 20
+interface range GigabitEthernet0/13-20
+ switchport mode access
+ switchport access vlan 20
+ spanning-tree portfast
+ no shutdown
+!
+! Access ports - VLAN 30
+interface range GigabitEthernet0/21-24
+ switchport mode access
+ switchport access vlan 30
+ spanning-tree portfast
+ no shutdown
+!
+end

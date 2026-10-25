@@ -1,0 +1,32 @@
+{
+  "profile": "metro",
+  "root_prefix": "172.16.0.0/16",
+  "total_decisions": 22,
+  "total_subnets": 10,
+  "total_hosts_requested": 559,
+  "total_usable_addresses": 641,
+  "efficiency_percent": 87.2,
+  "links": [
+    {
+      "name": "HQ-R1",
+      "distance_m": 15000.0,
+      "media": "OS2 SMF",
+      "standard": "10GBASE-ER",
+      "margin_db": 2.65
+    },
+    {
+      "name": "HQ-R2",
+      "distance_m": 35000.0,
+      "media": "OS2 SMF",
+      "standard": "10GBASE-ZR",
+      "margin_db": 9.55
+    },
+    {
+      "name": "R1-R2",
+      "distance_m": 28000.0,
+      "media": "OS2 SMF",
+      "standard": "10GBASE-ZR",
+      "margin_db": 11.6
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "profile": "campus",
+  "root_prefix": "10.10.0.0/16",
+  "total_decisions": 32,
+  "total_subnets": 14,
+  "total_hosts_requested": 1609,
+  "total_usable_addresses": 2329,
+  "efficiency_percent": 69.1,
+  "links": [
+    {
+      "name": "A-Admin-B-Academic",
+      "distance_m": 180.0,
+      "media": "OM4 MMF",
+      "standard": "10GBASE-SR",
+      "margin_db": null
+    },
+    {
+      "name": "A-Admin-C-Hostel",
+      "distance_m": 360.0,
+      "media": "OM4 MMF",
+      "standard": "10GBASE-SR",
+      "margin_db": null
+    },
+    {
+      "name": "B-Academic-C-Hostel",
+      "distance_m": 250.0,
+      "media": "OM4 MMF",
+      "standard": "10GBASE-SR",
+      "margin_db": null
+    }
+  ]
+}

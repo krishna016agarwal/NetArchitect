@@ -1,0 +1,1 @@
+Write a Python function that checks if a 10GBASE-LR/ER fiber link of N km has enough optical power budget.

@@ -1,0 +1,73 @@
+! ===== DEVICE: DIST-C =====
+!
+hostname DIST-C
+no ip domain-lookup
+!
+! --- VLAN Configuration (IEEE 802.1Q) ---
+vlan 80
+ name Students
+vlan 999
+ name NATIVE
+!
+! --- Spanning Tree (IEEE 802.1w RSTP) ---
+spanning-tree mode rapid-pvst
+!
+! --- Layer 3 Routing ---
+ip routing
+!
+! --- SVI Interfaces ---
+interface Vlan80
+ description Students SVI
+ ip address 10.10.4.1 255.255.252.0
+ no shutdown
+!
+! --- Access Ports ---
+interface GigabitEthernet1/0/33
+ description Students access
+ switchport mode access
+ switchport access vlan 80
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+ no shutdown
+!
+! --- Routed Point-to-Point Ports ---
+interface GigabitEthernet0/1
+ description P2P to A-Admin
+ no switchport
+ ip address 10.10.128.6 255.255.255.252
+ no shutdown
+!
+interface GigabitEthernet0/2
+ description P2P to B-Academic
+ no switchport
+ ip address 10.10.128.10 255.255.255.252
+ no shutdown
+!
+! --- Loopback Interfaces ---
+interface Loopback0
+ description Router-ID DIST-C
+ ip address 10.10.128.14 255.255.255.255
+ no shutdown
+!
+! --- OSPF Configuration (RFC 2328) ---
+router ospf 1
+ router-id 10.10.128.14
+ network 10.10.4.0 0.0.3.255 area 0
+ network 10.10.128.4 0.0.0.3 area 0
+ network 10.10.128.8 0.0.0.3 area 0
+ network 10.10.128.14 0.0.0.0 area 0
+ passive-interface Vlan80
+!
+! --- Access Control Lists ---
+ip access-list extended RESTRICT-STUDENTS
+ remark Deny Students to Mgmt
+ deny ip any 10.10.9.0 0.0.0.63
+ remark Deny Students to Servers
+ deny ip any 10.10.9.64 0.0.0.63
+ remark Allow all other traffic
+ permit ip any any
+!
+interface Vlan80
+ ip access-group RESTRICT-STUDENTS in
+!
+end
