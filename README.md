@@ -1,7 +1,7 @@
 # NetArchitect — CLI Network Design & Cisco IOS Configuration Generator
 
 **Course:** CIC-307 (Computer Networks Mini-Project)  
-**Author:** Krishna Agarwal  
+**Author:** Krishna Agarwal | Piyush Verma
 **Repository:** [https://github.com/krishna016agarwal/NetArchitect.git](https://github.com/krishna016agarwal/NetArchitect.git)  
 **Architecture:** Python 3.11+ Standard Library + Jinja2 + Pytest
 
