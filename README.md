@@ -2,6 +2,7 @@
 
 **Course:** CIC-307 (Computer Networks Mini-Project)  
 **Author:** Krishna Agarwal | Piyush Verma
+
 **Architecture:** Python 3.11+ Standard Library + Jinja2 + Pytest
 
 NetArchitect is an automated, explainable network design CLI tool. It takes physical and logical network requirements as input (either via built-in presets or custom JSON scenarios), applies deterministic rule engines for physical media selection, bitwise VLSM allocation, and routing protocol selection, and outputs ready-to-deploy Cisco IOS configurations, natural-language justifications, and full IP allocation tables.
